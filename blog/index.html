@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notes from the Concourser team on running campus operations in production: attendance, meal allowances, payments, deployment and the intelligence layer being built on top of the ledger.">
+<title>Concourser | Notes</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230a0a0a'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='10'%20fill='none'%20stroke='%23ffc67e'%20stroke-width='2'/%3E%3Ccircle%20cx='16'%20cy='8'%20r='2.5'%20fill='%23ffc67e'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cncrsr.com/blog/">
+<meta property="og:title" content="Concourser | Notes">
+<meta property="og:description" content="Notes from the Concourser team on running campus operations in production: attendance, meal allowances, payments, deployment and the intelligence layer being built on top of the ledger.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Concourser | Notes">
+<meta name="twitter:description" content="Notes from the Concourser team on running campus operations in production.">
+<meta property="og:image" content="https://www.cncrsr.com/assets/concourser-mark.png">
+<meta name="twitter:image" content="https://www.cncrsr.com/assets/concourser-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/index.css">
+<link rel="stylesheet" href="../assets/css/blog.css">
+<link rel="canonical" href="https://www.cncrsr.com/blog/">
+<!-- If JS never runs, .reveal must not leave the page blank. -->
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+
+<!-- Grain overlay via inline SVG filter (matches home page) -->
+<svg class="grain" aria-hidden="true">
+  <filter id="grain-filter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-filter)"/>
+</svg>
+
+<div class="scan-layer" aria-hidden="true"></div>
+
+<nav id="site-nav">
+  <div class="nav-left">
+    <a class="home-link" href="https://www.rikoukeilabs.com/"><svg class="co-mark" viewBox="40 40 1520 1520" aria-hidden="true"><use href="../assets/icons.svg#company-mark"/></svg>Rikoukei Labs</a>
+    <span class="crumb-sep">/</span>
+    <a class="brand" href="https://www.cncrsr.com/">
+      <svg class="mark" viewBox="0 0 1600 1600" aria-hidden="true"><use href="../assets/icons.svg#product-mark"/></svg>
+      <span class="brand-name">Concourser</span>
+    </a>
+  </div>
+  <div class="nav-right">
+    <a class="nav-cta" href="https://www.cncrsr.com/">&larr; HOME</a>
+    <a class="nav-cta" href="https://www.cncrsr.com/apps/">DEMOS</a>
+    <a class="nav-cta" href="https://www.cncrsr.com/#contact">REQUEST A PILOT</a>
+  </div>
+</nav>
+
+<div class="page" id="top">
+
+  <!-- ============ HEAD ============ -->
+  <section class="blog-head">
+    <div class="inner">
+      <div class="eyebrow reveal">Notes</div>
+      <h1 class="reveal" style="--d:.08s">Notes from<br>the operations layer.</h1>
+      <p class="lede reveal" style="--d:.16s">Working notes from a platform that runs a real campus every day. What breaks in campus operations, what paper-based and spreadsheet-based accounting quietly costs, and what becomes possible once every attendance mark and every charge sits in one structured record.</p>
+    </div>
+  </section>
+
+  <!-- ============ NOTES LIST ============ -->
+  <section class="notes" id="notes">
+    <div class="inner">
+      <div class="note-list">
+
+        <article class="note-card reveal">
+          <div class="note-meta"><span class="tag">// Note 001</span><span class="note-date">Coming soon</span></div>
+          <h2>Where the money leaks in paper-based campus accounting</h2>
+          <p>An entitlement nobody can verify at the counter, a charge nobody can attribute afterwards, and a month-end total that balances only against itself. Paper and spreadsheet accounting tends to hide loss rather than prevent it. This note works through the specific points where value escapes, why the gap stays nearly invisible in aggregate figures, and what changes once every charge carries an identity, a timestamp and a cost center.</p>
+        </article>
+
+        <article class="note-card reveal" style="--d:.08s">
+          <div class="note-meta"><span class="tag">// Note 002</span><span class="note-date">Coming soon</span></div>
+          <h2>What a campus credential actually has to prove</h2>
+          <p>Every campus transaction is an identity claim, usually settled by a staff member recognizing a face or accepting a card. This note is about making that claim verifiable without slowing the queue: how quickly a credential should stop being valid, what has to happen the day someone loses it, why a shared device at a counter needs a different trust model from a phone in a pocket, and where the honest limits of all of it sit.</p>
+        </article>
+
+        <article class="note-card reveal" style="--d:.16s">
+          <div class="note-meta"><span class="tag">// Note 003</span><span class="note-date">Coming soon</span></div>
+          <h2>What becomes automatable once the record is complete</h2>
+          <p>Most campus automation stalls because the underlying data is scattered across spreadsheets, portals and inboxes. Once programs, attendance, allowances, payments and approvals share one structured record, a large class of repetitive administrative work becomes describable as a rule. This note maps which operations are worth automating first, which should stay deterministic rather than predictive, and where a human approval step is not optional.</p>
+        </article>
+
+      </div>
+
+      <p class="tr-asof reveal" style="--d:.24s">Notes are published as the work happens rather than on a schedule. If you want to be told when the first one lands, <a href="https://www.cncrsr.com/#contact">get in touch</a>.</p>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing">
+    <div class="inner">
+      <h2 class="reveal" style="--d:.18s">Running the same problems<br>on your campus?</h2>
+      <p class="lede reveal" style="--d:.26s">Concourser has been in daily production since February 2026. If any of the above sounds like your operation, the fastest way to find out is a pilot.</p>
+      <div class="hero-ctas reveal" style="--d:.34s">
+        <a class="btn btn-primary" href="https://www.cncrsr.com/#contact">Request a pilot</a>
+        <a class="btn btn-ghost" href="https://www.cncrsr.com/">Back to Concourser</a>
+      </div>
+
+      <div class="foot-links">
+        <span>&copy; 2026 Rikoukei Labs</span>
+        <span class="links">
+          <a href="https://www.cncrsr.com/#traction">Traction</a>
+          <a href="https://www.cncrsr.com/#platform">Platform</a>
+          <a href="https://www.cncrsr.com/#security">Security</a>
+          <a href="https://www.cncrsr.com/#roadmap">What's next</a>
+          <a href="https://www.cncrsr.com/#team">Team</a>
+          <a href="/blog/">Notes</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="../assets/js/blog.js"></script>
+</body>
+</html>

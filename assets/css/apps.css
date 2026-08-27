@@ -135,22 +135,14 @@
     font-weight: 800; font-size: 18px; letter-spacing: .06em;
     color: #ffffff; text-transform: uppercase; text-decoration: none;
   }
-  .topbar .brand .mark {
-    width: 26px; height: 26px;
-    border: 1.5px solid var(--gold);
-    border-radius: 50%;
-    position: relative;
-    flex-shrink: 0;
-  }
-  .topbar .brand .mark::after {
-    content: "";
-    position: absolute;
-    top: 2px; left: 50%;
-    width: 5px; height: 5px;
-    margin-left: -2.5px;
-    background: var(--gold);
-    border-radius: 50%;
-  }
+  .topbar
+  /* Product mark: the real SVG asset, not an improvised circle. */
+  .brand .mark { width: 26px; height: 26px; flex-shrink: 0; display: block; overflow: visible; }
+  /* Company mark, deliberately subordinate to the product mark. */
+  .home-link { display: inline-flex; align-items: center; gap: 7px; }
+  .home-link .co-mark { width: 15px; height: 15px; flex-shrink: 0; opacity: .7; transition: opacity .2s; }
+  .home-link:hover .co-mark { opacity: 1; }
+
   .home-btn {
     font-family: var(--font-mono); font-size: 12px; letter-spacing: .18em;
     text-transform: uppercase; text-decoration: none;

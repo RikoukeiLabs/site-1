@@ -4,15 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Concourser | The operations layer for a modern campus</title>
-<meta name="description" content="Concourser unifies attendance, meal allowances, and point-of-sale for a modern campus. Three installable apps, two web dashboards, one operations layer.">
+<meta name="description" content="Concourser unifies attendance, meal allowances and point-of-sale for a modern campus. A unified app, web interfaces and operational dashboards on one source of truth.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20fill='%230a0a0a'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='10'%20fill='none'%20stroke='%23ffc67e'%20stroke-width='2'/%3E%3Ccircle%20cx='16'%20cy='8'%20r='2.5'%20fill='%23ffc67e'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.cncrsr.com/">
 <meta property="og:title" content="Concourser | The operations layer for a modern campus">
-<meta property="og:description" content="Concourser unifies attendance, meal allowances, and point-of-sale for a modern campus. Three installable apps, two web dashboards, one operations layer.">
+<meta property="og:description" content="Concourser unifies attendance, meal allowances and point-of-sale for a modern campus. A unified app, web interfaces and operational dashboards on one source of truth.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Concourser | The operations layer for a modern campus">
 <meta name="twitter:description" content="Concourser unifies attendance, meal allowances, and point-of-sale for a modern campus.">
+<link rel="canonical" href="https://www.cncrsr.com/">
+<meta property="og:image" content="https://www.cncrsr.com/assets/concourser-mark.png">
+<meta name="twitter:image" content="https://www.cncrsr.com/assets/concourser-mark.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.cncrsr.com/#concourser",
+      "name": "Concourser",
+      "url": "https://www.cncrsr.com/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Campus operations platform",
+      "operatingSystem": "iOS, Web",
+      "description": "Concourser is the operations layer for a modern campus. One operational ledger unifies student and staff identity, attendance check-in, meal allowances, point-of-sale payments and administrative reporting across role-specific apps and dashboards.",
+      "downloadUrl": "https://apps.apple.com/in/app/concourser/id6791248721",
+      "featureList": [
+        "Attendance check-in with short-lived rotating QR codes",
+        "Meal allowance management with live balances",
+        "Point-of-sale charging against student and staff allowances",
+        "Admin dashboard for users, programs, allowances and audit logs",
+        "Store dashboard with real-time sales and end-of-day reporting",
+        "Excel and PDF exports for attendance and transactions"
+      ],
+      "publisher": { "@id": "https://www.rikoukeilabs.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.rikoukeilabs.com/#organization",
+      "name": "Rikoukei Labs",
+      "url": "https://www.rikoukeilabs.com/",
+      "email": "contact@rikoukeilabs.com",
+      "sameAs": [
+        "https://github.com/Rikoukei-Labs",
+        "https://www.linkedin.com/company/rikoukei-labs/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.cncrsr.com/#website",
+      "url": "https://www.cncrsr.com/",
+      "name": "Concourser",
+      "publisher": { "@id": "https://www.rikoukeilabs.com/#organization" }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -95,15 +143,16 @@
 
 <nav id="site-nav">
   <div class="nav-left">
-    <a class="home-link" href="https://www.rikoukeilabs.com/">Rikoukei Labs</a> <!-- alt home link = ../ -->
+    <a class="home-link" href="https://www.rikoukeilabs.com/"><svg class="co-mark" viewBox="40 40 1520 1520" aria-hidden="true"><use href="assets/icons.svg#company-mark"/></svg>Rikoukei Labs</a> <!-- alt home link = ../ -->
     <span class="crumb-sep">/</span>
     <a class="brand" href="#top">
-      <span class="mark"></span>
+      <svg class="mark" viewBox="0 0 1600 1600" aria-hidden="true"><use href="assets/icons.svg#product-mark"/></svg>
       <span class="brand-name">Concourser</span>
     </a>
   </div>
   <div class="nav-right">
     <a class="nav-cta" href="https://www.cncrsr.com/apps/" id="products-link">DEMOS</a>
+    <a class="nav-cta" href="/blog/">NOTES</a>
     <a class="nav-cta" href="#contact">REQUEST A PILOT</a>
   </div>
 </nav>
@@ -116,8 +165,9 @@
     <div class="inner">
       <div class="hero-badge reveal">CAMPUS OPERATIONS PLATFORM</div>
       <h1 class="reveal" style="--d:.08s">Concourser</h1>
+      <p class="ambition reveal" style="--d:.12s">Building the operating layer for the billions campus software left behind.</p>
       <p class="tagline reveal" style="--d:.16s">The operations layer for a modern campus: <em>attendance</em>, <em>meals</em>, and <em>payments</em>, unified.</p>
-      <p class="sub reveal" style="--d:.24s">Three installable apps and two web dashboards, orbiting one source of truth. Every check-in, every charge, every allowance, accounted for in real time. A system always improving together with our users.</p>
+      <p class="sub reveal" style="--d:.24s">A unified app, web interfaces and operational dashboards now run on one source of truth. Every check-in, every charge and every allowance is accounted for in real time, while the remaining user-facing web roles are being consolidated into the cross-platform client.</p>
       <div class="hero-ctas reveal" style="--d:.32s">
         <a class="btn btn-primary" href="#contact">Request a pilot</a>
         <a class="btn btn-ghost" href="#proof">Explore our platform</a>
@@ -131,8 +181,23 @@
     <div class="inner">
       <div class="claim reveal">
         <div class="live">Live in production</div>
-        Deployed in real-time production use at a <strong>top-100 global research university</strong> campus, running attendance, meal allowances, and point-of-sale every day.
+        Running attendance, meal allowances and point-of-sale every day on the campus of a research university ranked <strong>#48 globally</strong> in the Times Higher Education Impact Rankings and <strong>#103 worldwide</strong> in the U.S. News &amp; World Report Best Global Universities 2027, and ranked first across West Asia and North Africa.
       </div>
+    </div>
+  </section>
+
+  <!-- ============ TRACTION ============ -->
+  <section class="traction" id="traction">
+    <div class="inner">
+      <div class="eyebrow reveal">Traction</div>
+      <h2 class="reveal" style="--d:.1s">What the platform has handled so far.</h2>
+      <div class="tr-grid">
+        <div class="tr-item reveal"><b>30,000+</b><span>meal transactions</span></div>
+        <div class="tr-item reveal" style="--d:.06s"><b>US$228,000+</b><span>campus transaction value</span></div>
+        <div class="tr-item reveal" style="--d:.12s"><b>13,000+</b><span>attendance records</span></div>
+        <div class="tr-item reveal" style="--d:.18s"><b>575+</b><span>student and teaching accounts</span></div>
+      </div>
+      <p class="tr-asof reveal" style="--d:.24s">These figures are the case as of August 2026, counted from February 2026 when Concourser entered daily production use. They are refreshed periodically rather than live, so treat them as a floor and not a live counter.</p>
     </div>
   </section>
 
@@ -140,8 +205,8 @@
   <section class="features-head" id="platform">
     <div class="inner">
       <div class="eyebrow reveal">The versatile platform</div>
-      <h2 class="reveal" style="--d:.1s">One system. Five surfaces.<br>Zero missed signals.</h2>
-      <p class="lede reveal" style="--d:.2s">Each surface is purpose-built for the person holding it: student, teacher, cashier, administrator, or store manager. Every one of them writes to the same campus records.</p>
+      <h2 class="reveal" style="--d:.1s">Five roles. One operational core.<br>Zero missed signals.</h2>
+      <p class="lede reveal" style="--d:.2s">Students, teachers, store staff and administrators work through role-specific views of the same real-time campus ledger.</p>
     </div>
   </section>
 
@@ -343,8 +408,8 @@
   <section class="impact" id="impact">
     <div class="inner">
       <div class="eyebrow reveal">In the field</div>
-      <h2 class="reveal" style="--d:.1s">In quiet, daily service.</h2>
-      <p class="lede reveal" style="--d:.2s">Concourser runs the everyday rhythm of a working campus: morning check-ins, the busiest store hours, the end-of-day report. It is not built to impress with dashboards; it is built to stay out of the way.</p>
+      <h2 class="reveal" style="--d:.1s">Proven under real operational load.</h2>
+      <p class="lede reveal" style="--d:.2s">Concourser runs the everyday rhythm of a working campus: morning check-ins, busy store hours and end-of-day reporting. Since entering production in February 2026, the platform has processed more than 30,000 meal transactions and more than 13,000 attendance records while supporting a paid founding deployment.</p>
       <p class="lede reveal" style="--d:.3s">It also pays for itself. Before Concourser, the piloting campus ran on hand-signed paper coupons: unverifiable at a busy store counter, four times the staff work, and money quietly leaking with every service. Short-lived rotating QRs and per-program cost-center reconciliation closed that gap, recovering an estimated several thousand dollars as savings every month since February 2026.</p>
       <!-- Field-notes container temporarily removed (kept for later reference).
       <div class="field-notes reveal" style="--d:.3s">
@@ -364,14 +429,19 @@
       <p class="lede reveal" style="--d:.2s">These are the directions we are building with founding campuses, not a shipped feature list. Each one extends something already running in daily service, and pilot partners help decide the order.</p>
       <div class="sec-grid">
         <div class="sec-card reveal">
+          <span class="tag">// Building</span>
+          <h4>AI-assisted operations and automation</h4>
+          <p>The ledger is live. Now we make it think and act. Concourser already holds structured context for programs, attendance, allowances, payments and reporting. We are building natural-language analytics, automated operational briefs, smarter imports and configurable workflow automation, followed by anomaly detection, forecasting and approval-based operations agents.</p>
+        </div>
+        <div class="sec-card reveal" style="--d:.05s">
           <span class="tag">// Planned</span>
           <h4>Sessions beyond the classroom</h4>
           <p>Attendance sessions already run every morning. The same system building block extends to guest lectures, seminars, orientation and exam halls: one-off attendance lists, walk-in registration, and catering drawn against the event's own cost center rather than a student's program allowance.</p>
         </div>
         <div class="sec-card reveal" style="--d:.1s">
-          <span class="tag">// Planned</span>
-          <h4>One app, every platform</h4>
-          <p>The unified iOS beta on TestFlight carries all three roles in a single build. The next step is one cross-platform client for iOS and Android, so a campus deploys one app instead of any other number of installable surfaces.</p>
+          <span class="tag">// In progress</span>
+          <h4>Unified app, expanding across platforms</h4>
+          <p>Concourser began as three role-specific web apps, passed through a native iOS build that carried every role at once, and is now consolidating into a single cross-platform client. That client is publicly available through Apple's App Store. The next step is extending the same one across Android and additional platforms, so a campus deploys one app rather than one per role.</p>
         </div>
         <div class="sec-card reveal" style="--d:.2s">
           <span class="tag">// Planned</span>
@@ -384,6 +454,58 @@
           <p>The role model already decides what each surface is allowed to see. Opening it wider brings in the people around a campus: sponsors funding a program, guardians following a student's balance, and partner institutions running a joint course or event, each with a wisely limited view and aggregate figures where privacy requires them.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ MARKET ============ -->
+  <section class="market" id="market">
+    <div class="inner">
+      <div class="eyebrow reveal">Why the gap exists</div>
+      <h2 class="reveal" style="--d:.1s">Most institutions still run<br>operations on paper.</h2>
+      <p class="lede reveal" style="--d:.2s">If your campus coordinates attendance, allowances and payments through spreadsheets, printed coupons and portals that do not talk to each other, that is not a local failure. It is the ordinary state of campus operations almost everywhere, and it is why the workflows Concourser replaces have stayed manual for so long.</p>
+      <div class="sec-grid">
+        <div class="sec-card reveal">
+          <h4>53% of countries</h4>
+          <p>still rely on paper-based information systems for education planning and management, according to UNESCO.</p>
+        </div>
+        <div class="sec-card reveal" style="--d:.1s">
+          <h4>40% of primary schools</h4>
+          <p>are connected to the internet worldwide. For lower-secondary schools the figure is 50%.</p>
+        </div>
+        <div class="sec-card reveal" style="--d:.2s">
+          <h4>1.67 billion students</h4>
+          <p>are enrolled worldwide, 1.4 billion in primary and secondary education and 269 million in higher education, before counting teachers, administrators and store staff.</p>
+        </div>
+      </div>
+      <p class="lede reveal" style="--d:.3s">Concourser enters through the daily workflows an institution cannot avoid, then expands into the operating layer it would rather not rebuild.</p>
+      <p class="tr-asof reveal" style="--d:.36s">Sources: UNESCO Digital Education and Education Management, and the UNESCO Global Education Monitoring Report. Enrolment figures are for 2024.</p>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="team" id="team">
+    <div class="inner">
+      <div class="eyebrow reveal">Team</div>
+      <h2 class="reveal" style="--d:.1s">Technical founders.<br>Commercial software and production systems.</h2>
+      <p class="lede reveal" style="--d:.2s">Concourser was built, deployed, operated and commercialized by its founders before any institutional funding.</p>
+      <div class="sec-grid">
+        <div class="sec-card reveal">
+          <span class="role">co-founder · architecture &amp; full-stack engineering</span>
+          <h4>S. V.</h4>
+          <p>Built Concourser's core production platform. React and TypeScript, FastAPI and PostgreSQL, Swift and iOS. Production architecture, deployment and campus support. Leads the unified client and intelligent-operations engineering.</p>
+        </div>
+        <div class="sec-card reveal" style="--d:.1s">
+          <span class="role">co-founder · product, systems &amp; commercial</span>
+          <h4>A. Y.</h4>
+          <p>Former commercial software engineer shipping enterprise client applications. Full-stack and web, APIs, cloud workflows and automation. Product specification, UX and QA, debugging and release review, plus commercialization and institutional coordination.</p>
+        </div>
+        <div class="sec-card reveal" style="--d:.2s">
+          <span class="role">platform engineering · available scaling expertise</span>
+          <h4>A. B.</h4>
+          <p>Six years of production backend and data-platform engineering. Distributed systems, integrations, event pipelines, reliability and rollout tooling. Engaged when Concourser needs to harden scale and accelerate repeatable deployments.</p>
+        </div>
+      </div>
+      <p class="tr-asof reveal" style="--d:.3s">Concourser is the flagship product of <a href="https://www.rikoukeilabs.com/">Rikoukei Labs</a>.</p>
     </div>
   </section>
 
@@ -400,10 +522,14 @@
       <div class="foot-links">
         <span>© 2026 Rikoukei Labs</span>
         <span class="links">
+          <a href="#traction">Traction</a>
           <a href="#platform">Platform</a>
           <a href="#security">Security</a>
           <a href="#impact">In the field</a>
           <a href="#roadmap">What's next</a>
+          <a href="#market">Why the gap</a>
+          <a href="#team">Team</a>
+          <a href="/blog/">Notes</a>
         </span>
       </div>
     </div>

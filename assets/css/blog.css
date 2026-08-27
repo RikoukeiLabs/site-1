@@ -1,0 +1,67 @@
+  /* Notes (blog) page. Layers on top of index.css, which supplies the tokens, nav, grain, buttons, .eyebrow, .lede and .closing. */
+
+  .blog-head {
+    padding: clamp(120px, 18vh, 200px) 0 clamp(30px, 5vh, 56px);
+  }
+  .blog-head h1 {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 8vw, 96px);
+    font-weight: 900;
+    line-height: 0.94;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin: 18px 0 0;
+  }
+
+  .notes { padding: clamp(40px, 6vh, 70px) 0 clamp(90px, 12vh, 150px); }
+
+  .note-list {
+    display: grid;
+    gap: 20px;
+  }
+  .note-card {
+    border: 2px solid var(--line-soft);
+    padding: 30px 26px;
+    background: rgba(17, 17, 17, 0.6);
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .note-card:hover {
+    border-color: var(--line);
+    transform: translateY(-2px);
+  }
+  .note-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-bottom: 14px;
+  }
+  .note-date {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .note-card h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.8vw, 30px);
+    font-weight: 800;
+    line-height: 1.12;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin: 0 0 12px;
+  }
+  .note-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    max-width: 58em;
+    margin: 0;
+  }
+
+  /* The notes page has no hero orrery, so the closing block needs its own top rule rather than inheriting the home page's spacing. */
+  .notes + .closing { padding-top: 0; }

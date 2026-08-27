@@ -116,22 +116,29 @@
     text-transform: uppercase;
     color: #ffffff;
   }
+  /* Product mark: the real SVG asset, not an improvised circle. */
   .brand .mark {
-    width: 26px; height: 26px;
-    border: 1.5px solid var(--gold);
-    border-radius: 50%;
-    position: relative;
+    width: 26px;
+    height: 26px;
     flex-shrink: 0;
+    display: block;
+    overflow: visible;
   }
-  .brand .mark::after {
-    content: "";
-    position: absolute;
-    top: 2px; left: 50%;
-    width: 5px; height: 5px;
-    margin-left: -2.5px;
-    background: var(--gold);
-    border-radius: 50%;
+  /* Company mark, deliberately subordinate to the product mark. */
+  .home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
   }
+  .home-link .co-mark {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .home-link:hover .co-mark { opacity: 1; }
+
   .nav-cta {
     font-family: var(--font-mono);
     font-size: 12px;
@@ -834,4 +841,72 @@
       transform: translateY(14px);
       transition-duration: 0.45s;
     }
+  }
+
+  /* ---------- Hero ambition line ---------- */
+  .ambition {
+    font-family: var(--font-display);
+    font-size: clamp(21px, 3.2vw, 38px);
+    font-weight: 900;
+    line-height: 1.08;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: var(--gold);
+    max-width: 16em;
+    margin: 6px 0 18px;
+  }
+
+  /* ---------- Traction (standalone, dated; refreshed periodically) ---------- */
+  .traction { padding: clamp(70px, 9vh, 110px) 0; }
+  .tr-grid {
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .tr-item {
+    border: 2px solid var(--line-soft);
+    padding: 26px 22px;
+    background: rgba(17, 17, 17, 0.6);
+  }
+  .tr-item b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(29px, 4vw, 44px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--gold);
+  }
+  .tr-item span {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+  }
+  .tr-asof {
+    margin-top: 26px;
+    max-width: 46em;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-faint);
+  }
+  .tr-asof a { color: var(--gold-dim); }
+
+  /* ---------- Market ---------- */
+  .market { padding: clamp(90px, 12vh, 150px) 0; }
+  .market .tr-asof { margin-top: 30px; }
+
+  /* ---------- Team ---------- */
+  .team { padding: clamp(90px, 12vh, 150px) 0; }
+  .team .role {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 10px;
   }
