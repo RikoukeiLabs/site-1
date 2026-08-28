@@ -32,7 +32,9 @@
         '<span class="wring"></span>' +
         '<span class="wlabel">// RETURNING : HOME</span>';
       document.body.appendChild(ov);
-      setTimeout(function() { window.location.href = 'https://www.cncrsr.com/?warp=1'; }, 760);
+      var dest = link.getAttribute('href');
+      dest += (dest.indexOf('?') === -1 ? '?' : '&') + 'warp=1';
+      setTimeout(function() { window.location.href = dest; }, 760);
     });
   });
 })();

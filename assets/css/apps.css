@@ -436,3 +436,20 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  /* Same look as the Home button, but deliberately a different class: .home-btn carries the warp-out click handler that sends the visitor to the home page, which must not fire on buttons that open a dialog instead. */
+  .topbar-btn {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gold);
+    border: 1px solid var(--gold-dim);
+    padding: 9px 16px;
+    transition: background .2s, color .2s;
+  }
+  .topbar-btn:hover {
+    background: var(--gold);
+    color: #12100a;
+  }
