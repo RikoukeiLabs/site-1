@@ -101,6 +101,9 @@
     color: var(--text-faint);
     white-space: nowrap;
     transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
   }
   .home-link:hover { color: var(--accent2); }
   .crumb-sep { color: var(--line-soft); font-family: var(--font-mono); }
@@ -123,12 +126,6 @@
     flex-shrink: 0;
     display: block;
     overflow: visible;
-  }
-  /* Company mark, deliberately subordinate to the product mark. */
-  .home-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
   }
   .home-link .co-mark {
     width: 15px;
@@ -342,8 +339,8 @@
     -webkit-backdrop-filter: blur(4px);
     padding: 56px 0;
   }
-  .proof .claim { max-width: 46em; }
   .proof .claim {
+    max-width: 46em;
     font-size: clamp(16px, 1.9vw, 20px);
     font-weight: 500;
     line-height: 1.55;
