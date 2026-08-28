@@ -907,3 +907,30 @@
     color: var(--gold-dim);
     margin-bottom: 10px;
   }
+
+  /* Section navigation in the header bar. These used to live only in the footer, which meant a reader had to reach the bottom of the page to jump anywhere. The header is flex with space-between, so this group sits between the brand and the call-to-action buttons. It is hidden on narrower screens, where the buttons alone need the width. */
+  .nav-sections {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+  }
+  .nav-sections a {
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--text-faint);
+    transition: color 0.2s;
+  }
+  .nav-sections a:hover,
+  .nav-sections a:focus-visible {
+    color: var(--gold);
+  }
+  /* Hidden below this width: measured the three nav groups measure 1053px together, so below roughly 1210px they start crowding; they are dropped a little above that. */
+  @media (max-width: 1220px) {
+    .nav-sections { display: none; }
+  }
