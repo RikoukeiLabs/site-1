@@ -427,3 +427,12 @@
   #referral-modal button.cm-copy{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--gold);background:none;border:1px solid var(--gold-dim);padding:5px 10px;cursor:pointer}
   #referral-modal a.cm-link{font-family:var(--font-mono);font-size:13px;color:var(--gold);text-decoration:underline;text-underline-offset:3px}
   #referral-modal .cm-close{position:absolute;top:10px;right:14px;background:none;border:none;color:var(--text-dim);font-size:20px;cursor:pointer;line-height:1}
+
+  /* The topbar now carries the actions that used to sit in the footer. Each of these leaves the page or opens a dialog, so all are drawn as buttons, matching how the home page separates buttons from its plain section links. */
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }

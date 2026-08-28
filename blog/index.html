@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/index.css">
 <link rel="stylesheet" href="../assets/css/blog.css">
+<link rel="stylesheet" href="../assets/css/index-2.css">
 <link rel="canonical" href="https://www.cncrsr.com/blog/">
 <!-- If JS never runs, .reveal must not leave the page blank. -->
 <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
@@ -96,6 +97,7 @@
   </div>
   <div class="nav-right">
     <a class="nav-cta" href="../index.html">&larr; HOME</a>
+    <a class="nav-cta" href="#contact">CONTACT</a>
   </div>
 </nav>
 
@@ -147,26 +149,39 @@
   </section>
 
   <!-- ============ CLOSING ============ -->
-  <section class="closing">
+  <section class="closing" id="contact">
     <div class="inner">
       <h2 class="reveal" style="--d:.18s">Running the same problems<br>on your campus?</h2>
       <p class="lede reveal" style="--d:.26s">Concourser has been in daily production since February 2026. If any of the above sounds like your operation, the fastest way to find out is a pilot.</p>
       <div class="hero-ctas reveal" style="--d:.34s">
-        <a class="btn btn-primary" href="../index.html#contact">Request a pilot</a>
+        <a class="btn btn-primary" href="mailto:contact@rikoukeilabs.com?subject=Concourser%20enquiry">Get in touch</a>
         <a class="btn btn-ghost" href="../index.html">Back to Concourser</a>
       </div>
 
       <div class="foot-links">
         <span>&copy; 2026 Rikoukei Labs</span>
-        <span class="links">
-          <a href="../index.html">Home</a>
-        </span>
       </div>
     </div>
   </section>
 
 </div>
 
+<div id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="cm-title-txt">
+  <div class="cm-card">
+    <button class="cm-close" aria-label="Close">&times;</button>
+    <p class="cm-title" id="cm-title-txt">// CONTACT</p>
+    <p class="cm-desc">You can either drop us a message with your questions and our team will quickly get back to you with answers, or ask for an online meeting to talk face-to-face.</p>
+    <div class="cm-row"><span class="cm-label">E-mail address</span>
+      <span class="cm-val"><span class="cm-email">contact@rikoukeilabs.com</span><button class="cm-copy" type="button">COPY</button></span>
+    </div>
+    <div class="cm-row"><span class="cm-label">WhatsApp</span>
+      <span class="cm-val"><a class="cm-link" href="https://wa.me/918787066090" target="_blank" rel="noopener noreferrer">Message the Concourser team now</a></span>
+    </div>
+    <div class="cm-row"><span class="cm-label">E-mail app</span>
+      <span class="cm-val"><a class="cm-link" id="cm-mailto" href="mailto:contact@rikoukeilabs.com">Open a pre-filled draft</a></span>
+    </div>
+  </div>
 <script src="../assets/js/blog.js"></script>
+<script src="../assets/js/index-3.js"></script>
 </body>
 </html>
