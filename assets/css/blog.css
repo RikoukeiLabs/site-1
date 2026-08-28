@@ -65,3 +65,46 @@
 
   /* The notes page has no hero orrery, so the closing block needs its own top rule rather than inheriting the home page's spacing. */
   .notes + .closing { padding-top: 0; }
+
+  /* Notes page header lockup. The head becomes two columns so the marks sit beside the heading instead of leaving the right half empty. Both marks carry the same gold and the same treatment; their relative sizes are set below. */
+  .blog-head .inner {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: clamp(28px, 5vw, 64px);
+    align-items: center;
+  }
+  .blog-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(6px, 1.2vw, 14px);
+  }
+  .blog-art svg {
+    display: block;
+    height: auto;
+    overflow: visible;
+    filter: drop-shadow(0 0 34px rgba(255, 198, 126, 0.14));
+  }
+  /* Concourser leads and Rikoukei Labs is subordinate: this is a product page, and the company is the maker. The company mark is sized smaller than the ratio alone suggests because its viewBox is cropped tighter, so its artwork fills 105% of its box against the product mark's 100% and reads larger at equal widths. */
+  .ba-product {
+    width: clamp(124px, 20vw, 192px);
+  }
+  .ba-company {
+    width: clamp(62px, 10vw, 100px);
+  }
+  .ba-sep {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 4vw, 44px);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--gold-dim);
+  }
+  @media (max-width: 860px) {
+    .blog-head .inner {
+      grid-template-columns: 1fr;
+    }
+    .blog-art {
+      justify-content: flex-start;
+      margin-top: 26px;
+    }
+  }
